@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import "Home.css";
+@import "Nav.css";
+@import "footer.css";
+/* Form Styles */
+@import "form.css";
+@import "admission.css";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --light: #e5e5e5;
+  --orange: #ff220e;
+  --blue: #2d318b;
+  --blueVariant: hsl(237, 50%, 16%);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--light);
+}
+
+.headerLine {
+  width: 10rem;
+  height: 3px;
+  background-color: var(--orange);
+  margin: 0.3rem 0;
+}
+.headerLineCenter {
+  width: 10rem;
+  height: 3px;
+  background-color: var(--orange);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-sec {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn-custom {
+  padding: 0.4rem 1rem;
+  background-color: var(--orange);
+  color: #fff;
+}
+.btn-alt-custom {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--orange);
+  color: var(--light);
+}
+
+@media only screen and (max-width: 798px) {
+}
