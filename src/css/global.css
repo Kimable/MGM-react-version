@@ -5,6 +5,8 @@
 /* Form Styles */
 @import "form.css";
 @import "admission.css";
+@import "about.css";
+@import "contact.css";
 
 * {
   box-sizing: border-box;
@@ -28,9 +30,17 @@ body {
 a {
   text-decoration: none;
 }
+h1,
+h2 {
+  text-transform: uppercase;
+}
 
 a:hover {
   color: var(--light);
+}
+
+.bg-primary {
+  background-color: var(--blue) !important;
 }
 
 .headerLine {
@@ -62,15 +72,26 @@ a:hover {
   justify-content: center;
   flex-direction: column;
 }
+
 .btn-custom {
   padding: 0.4rem 1rem;
   background-color: var(--orange);
   color: #fff;
+  border-radius: 3px;
 }
 .btn-alt-custom {
   padding: 0.4rem 1rem;
   border: 1px solid var(--orange);
   color: var(--light);
+}
+.coming-soon-pages {
+  height: 70vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("../img/wood.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  color: #fff;
 }
 
 @media only screen and (max-width: 798px) {

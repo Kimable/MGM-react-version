@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../img/mgm-logo.png";
 
 function Nav() {
@@ -21,31 +22,28 @@ function Nav() {
           id="navbarCollapse"
         >
           <div className="navbar-nav">
-            <a href="#" className="nav-item nav-link active">
+            <a href="/" className="nav-item nav-link active">
               Home
             </a>
-            <a href="#" className="nav-item nav-link active">
+            <a href="/about" className="nav-item nav-link active">
               About
             </a>
-            <a href="#" className="nav-item nav-link">
+
+            <a href="/admission" className="nav-item nav-link">
               Admission
             </a>
             <div className="nav-item dropdown">
-              <a
-                href="#"
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-              >
+              <p className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 Departments
-              </a>
+              </p>
               <div className="dropdown-menu">
-                <a href="#" className="dropdown-item">
+                <a href="/coming-soon" className="dropdown-item">
                   ICT
                 </a>
-                <a href="#" className="dropdown-item">
+                <a href="/coming-soon" className="dropdown-item">
                   STEM
                 </a>
-                <a href="#" className="dropdown-item">
+                <a href="/coming-soon" className="dropdown-item">
                   Science and Mathematics
                 </a>
               </div>
@@ -64,9 +62,9 @@ function Nav() {
             </div>
           </form>
           <div className="navbar-nav">
-            <a href="#" className="nav-item nav-link">
-              Login
-            </a>
+            <Link to="/contact" className="nav-item nav-link">
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>

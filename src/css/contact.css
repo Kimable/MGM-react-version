@@ -1,0 +1,21 @@
+.contact-info-item span {
+  color: var(--orange);
+  font-weight: bold;
+}
+.contact-info-item i {
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+}
+.contact-form-container {
+  margin: 0 14rem;
+}
+button {
+  border: none;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 798px) {
+  .contact-form-container {
+    margin: 0rem;
+  }
+}

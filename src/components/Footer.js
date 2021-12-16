@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../img/mgm-logo.png";
 
 export default function Footer() {
@@ -7,9 +8,9 @@ export default function Footer() {
       <div className="container-fluid p-4 text-white">
         <div className="footer-content row align-items-center">
           <div className="footer-links col-lg-4 col-sm-12">
-            <a href="/contact.php">Contact</a>
-            <a href="/about.php">About</a>
-            <a href="/admission.php">Addmission</a>
+            <Link to="/contact">Contact</Link>
+            <Link to="/about">About</Link>
+            <Link to="/admission">Addmission</Link>
           </div>
           <div className="footer-logo col-lg-4 col-sm-12">
             <img src={logo} alt="MGM Logo" />
@@ -22,12 +23,12 @@ export default function Footer() {
 
             <span className="icon-text">
               <i className="bi bi-whatsapp"></i>
-              <a href="#">WhatsApp</a>
+              <a href="/contact">WhatsApp</a>
             </span>
           </div>
         </div>
         <hr />
-        <p>Copyright &copy; 2021 | MGM Boys Academy</p>
+        <p>Copyright &copy; 2022 | MGM Boys Academy</p>
       </div>
     </footer>
   );

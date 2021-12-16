@@ -33,6 +33,10 @@
   align-items: center;
   padding: 1rem 0;
 }
+.card i {
+  font-size: 2rem;
+  color: var(--orange);
+}
 @media only screen and (max-width: 798px) {
   .heroContainer {
     padding-top: 2rem;
